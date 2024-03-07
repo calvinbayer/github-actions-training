@@ -18,7 +18,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ github..event_name }}
+      - run: echo ${{ github.event_name }}
       - run: echo $(git rev-parse --abbrev-ref HEAD)
       - run: echo $(ls)
   
