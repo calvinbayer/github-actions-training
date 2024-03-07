@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3.3.0
-      - uses: hello-world-docker-action/action
+      - uses: ./hello-world-docker-action/action
         with:
           who-to-greet: Calvin
