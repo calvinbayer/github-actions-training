@@ -1,0 +1,14 @@
+name: Hello World Docker CI
+on:
+  push:
+    paths: "hello-world-docker-action/**"
+  workflow_dispatch:
+
+jobs:
+  job:
+    runs-on: ubuntu latest
+    steps:
+      - uses: actions/checkout@v3.3.0
+      - uses: ./hello-world-docker-action/action
+        with:
+          who-to-greet: Calvin
