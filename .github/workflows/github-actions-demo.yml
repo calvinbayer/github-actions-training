@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo ${{ github.event_name }}
+      - uses: actions/checkout@v3.3.0
       - run: echo $(git rev-parse --abbrev-ref HEAD)
       - run: echo $(ls)
   
