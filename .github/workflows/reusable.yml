@@ -7,7 +7,7 @@ on:
         required: true
         default: World
     outputs:
-      current-time: ${{ jobs.job.outputs.current-time }}
+      current-time: ${{ jobs.reusable-job.outputs.current-time }}
 
 jobs:
   job:
